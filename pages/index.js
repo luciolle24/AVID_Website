@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Head from 'next/head';
 import { Article, ArticleTitle } from '../components/commons/Article';
 import { Flexbox } from '../components/commons/Flexbox';
+import Graph from '../components/Graph/Graph';
 
 export default function Home() {
   return (
@@ -35,6 +36,24 @@ export default function Home() {
             mattis. Venenatis cras sed felis eget velit.
           </Article>
         </Flexbox>
+        <Article>
+        <Graph
+            width="100%"
+            nodes={[
+              {
+                id: 1,
+                name: 'Flamme',
+                dependsOn: [7, 2],
+              },
+              { id: 2, name: 'Ombre', dependsOn: [7] },
+              { id: 3, name: 'Lame', dependsOn: [7, 2] },
+              { id: 4, name: 'Rivière', dependsOn: [7] },
+              { id: 5, name: 'Ombre I', dependsOn: [7, 2] },
+              { id: 6, name: 'Eisan', dependsOn: [7] },
+              { id: 7, name: "Then'ia", dependsOn: [] },
+            ]}
+          />
+        </Article>
       </Layout>
     </>
   );
