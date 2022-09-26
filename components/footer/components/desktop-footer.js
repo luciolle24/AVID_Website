@@ -117,9 +117,9 @@ export function DesktopFooter() {
             <Text>{t('contact')}</Text>
           </Clickable>
         </Title>
-        <NavBarLi>
+        {/* <NavBarLi>
           <SpecialLinks href="mailto:luciolle24@gmail.com">Send us an email</SpecialLinks>
-        </NavBarLi>
+        </NavBarLi> */}
       </CategoryDiv>
       <CategoryDiv>
         <NavBarLi>

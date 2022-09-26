@@ -59,7 +59,7 @@ export function MobileFooter() {
           />
           <Link href="/">
             <img
-              alt="Logo Eukleia"
+              alt="Logo AVID"
               width="160px"
               height="45px"
               src="../Logos/Eukleia_White.png"
@@ -72,21 +72,7 @@ export function MobileFooter() {
           </Link>
         </Flexbox>
         <InfoDiv>
-          <P>
-            +41 22 301 30 04
-            <br />
-            info@eukleia.eu
-            <br />
-          </P>
           <Link href="/privacy">{t('confidential')}</Link>
-          <P>
-            EUKLEIA Suisse <br />
-            Rue Eugène Marziano 17A
-            <br />
-            1227 Carouge
-            <br />
-            <br />
-          </P>
         </InfoDiv>
         <NavBarLi>
           <a
